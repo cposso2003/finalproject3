@@ -1,0 +1,220 @@
+/*
+Name: Christian Posso
+Date: April 19, 2026
+Description: Main stylesheet for Sparkle Auto Detailing final project website.
+*/
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #eaf6ff;
+    background-color: #0b1f3a;
+}
+
+/* IMAGES + VIDEO */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #02162b, #0d3b66, #1d5f9d);
+    border-bottom: 4px solid #76b5ff;
+}
+
+.top-bar {
+    padding: 1rem 0;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #bfe1ff;
+    background-color: white;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+    color: #d8eeff;
+}
+
+.tagline {
+    color: #b9dcff;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #082544;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    padding: 1rem;
+    display: block;
+    color: #eaf6ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #2c7fd1;
+}
+
+/* MAIN */
+main {
+    padding: 2rem 0;
+}
+
+/* HERO / SECTIONS */
+.hero,
+.split-section,
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero {
+    background: #0d3b66;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* BUTTON */
+.button {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    background: #56a3ff;
+    color: #001327;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background: #8fc5ff;
+}
+
+/* CARDS */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: #123d6b;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #123d6b;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #6cb4ff;
+    padding: 10px;
+}
+
+th {
+    background: #0a2c4f;
+}
+
+/* GALLERY */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #6cb4ff;
+}
+
+/* FOOTER */
+footer {
+    background: #061a2f;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* PAGE BACKGROUNDS (ALL BLUE SHADES) */
+.home-page {
+    background: #0b1f3a;
+}
+
+.services-page {
+    background: #133b68;
+}
+
+.pricing-page {
+    background: #174878;
+}
+
+.gallery-page {
+    background: #1d5f9d;
+}
+
+.contact-page {
+    background: #215f96;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero,
+    .split-section,
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}

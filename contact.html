@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+                    <p class="tagline">Professional shine. Premium care. Lasting results.</p>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="container">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container page-main">
+        <section class="page-banner">
+            <h2>Contact & Booking</h2>
+            <p>Have questions or want to schedule a detail? Fill out the form below.</p>
+        </section>
+
+        <section class="contact-layout">
+            <article>
+                <h3>Contact Information</h3>
+                <p><strong>Phone:</strong> (305) 555-0123</p>
+                <p><strong>Email:</strong> <a href="mailto:info@sparkleautodetailing.com">info@sparkleautodetailing.com</a></p>
+                <p><strong>Location:</strong> Miami, Florida</p>
+
+                <h3>Watch Our Work</h3>
+                <video controls>
+                    <source src="media/detailing-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </article>
+
+            <article>
+                <h3>Booking Form</h3>
+                <form action="#" method="post">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="vehicle">Vehicle Type</label>
+                    <input type="text" id="vehicle" name="vehicle">
+
+                    <label for="service">Service Requested</label>
+                    <select id="service" name="service">
+                        <option>Basic Wash</option>
+                        <option>Interior Clean</option>
+                        <option>Full Detail</option>
+                        <option>Premium Detail</option>
+                        <option>Ceramic Coating</option>
+                    </select>
+
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date">
+
+                    <label for="message">Additional Notes</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+
+                    <input type="submit" value="Submit Request" class="button submit-btn">
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Sparkle Auto Detailing</p>
+            <p><a href="index.html">Back to Home</a> | <a href="mailto:info@sparkleautodetailing.com">Email Us</a></p>
+        </div>
+    </footer>
+</body>
+</html>
